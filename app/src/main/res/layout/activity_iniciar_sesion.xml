@@ -7,42 +7,65 @@
     tools:context=".IniciarSesionActivity"
     android:background="#ffa500">
 
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="550dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout"
+        app:layout_constraintVertical_bias="0.786">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/Menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+        </LinearLayout>
+    </ScrollView>
+
     <LinearLayout
         android:id="@+id/linear_layout"
         android:layout_width="411dp"
-        android:layout_height="186dp"
+        android:layout_height="178dp"
         android:background="@drawable/degradado"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp">
 
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="78dp"
+            android:layout_height="77dp"
+            android:layout_weight="1" />
+
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="355dp"
+            android:layout_width="279dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             app:srcCompat="@drawable/logo" />
 
         <SearchView
             android:id="@+id/busqueda"
-            android:layout_width="87dp"
+            android:layout_width="57dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="412dp"
-        android:layout_height="552dp"
-        android:fadeScrollbars="false"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline"
-        app:layout_constraintVertical_bias="1.0">
+            android:layout_weight="1"
+            android:background="#005A1A1A"
+            android:backgroundTint="#00ECA118" />
 
     </LinearLayout>
 
