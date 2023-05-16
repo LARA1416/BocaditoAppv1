@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "592852099135",
+    "firebase_url": "https://bocaditoapp-default-rtdb.firebaseio.com",
+    "project_id": "bocaditoapp",
+    "storage_bucket": "bocaditoapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592852099135:android:e1a2cef9dc32f442c2d88a",
+        "android_client_info": {
+          "package_name": "xyz.lacoffe.splash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592852099135-5aqn8cl2rqanum354eng2bb87u77hnu7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtjw60zgggSzexJU8IYmBDudJLZ5v4mKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592852099135-5aqn8cl2rqanum354eng2bb87u77hnu7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592852099135:android:5e25c16ccba3b95cc2d88a",
+        "android_client_info": {
+          "package_name": "xyz.lacoffee.splash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592852099135-5aqn8cl2rqanum354eng2bb87u77hnu7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtjw60zgggSzexJU8IYmBDudJLZ5v4mKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592852099135-5aqn8cl2rqanum354eng2bb87u77hnu7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

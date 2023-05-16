@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BocaditoApp</string>
+    <string name="imagen_carton">imagen_carton</string>
+
+    <string name="btn_INICIAR_PANTALLA">INICIAR SESIÓN</string>
+    <string name="btn_REGISTRAR_PANTALLA">REGISTRARSE</string>
+    <string name="TEXT_CORREO">Correo</string>
+
+    <string name="btn_INICIAR_SESIÓN">INICIAR</string>
+
+    <string name="btn_REGISTRAR_SESION">REGISTRARSE</string>
+
+</resources>
