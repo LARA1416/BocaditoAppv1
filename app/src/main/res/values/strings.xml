@@ -9,5 +9,7 @@
     <string name="btn_INICIAR_SESIÓN">INICIAR</string>
 
     <string name="btn_REGISTRAR_SESION">REGISTRARSE</string>
+    <string name="Menu_title">Menu</string>
+    <string name="Bebidas">Bebidas</string>
 
 </resources>

@@ -2,54 +2,28 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Menu"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IniciarSesionActivity"
-    android:background="#ffa500">
-
-    <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="550dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linear_layout"
-        app:layout_constraintVertical_bias="0.786">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
-
-            <TextView
-                android:id="@+id/Menu"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
-
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
-
-        </LinearLayout>
-    </ScrollView>
+    android:background="#ffa500"
+    android:scrollbarSize="500dp"
+    tools:context=".IniciarSesionActivity">
 
     <LinearLayout
         android:id="@+id/linear_layout"
-        android:layout_width="411dp"
-        android:layout_height="178dp"
+        android:layout_width="403dp"
+        android:layout_height="181dp"
         android:background="@drawable/degradado"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <Spinner
             android:id="@+id/spinner"
             android:layout_width="78dp"
-            android:layout_height="77dp"
+            android:layout_height="match_parent"
             android:layout_weight="1" />
 
         <ImageView
@@ -62,7 +36,7 @@
         <SearchView
             android:id="@+id/busqueda"
             android:layout_width="57dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#005A1A1A"
             android:backgroundTint="#00ECA118" />
@@ -75,5 +49,184 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.25" />
+
+    <ScrollView
+        android:layout_width="413dp"
+        android:layout_height="615dp"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout"
+        tools:layout_editor_absoluteX="-1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titulo_menu"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:gravity="center_horizontal"
+                android:text="Menu"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/bebidas"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="Bebidas"
+                android:textSize="25dp"/>
+
+            <ImageView
+                android:id="@+id/jamaica"
+                android:layout_width="150dp"
+                android:layout_height="93dp"
+                android:layout_gravity="left"
+                app:srcCompat="@drawable/aguabonafon" />
+
+            <Button
+                android:id="@+id/agua_de_jamaica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="Jamaica 1L $25.00" />
+
+            <ImageView
+                android:id="@+id/horchata"
+                android:layout_width="150dp"
+                android:layout_height="93dp"
+                android:layout_gravity="left"
+                app:srcCompat="@drawable/horchata" />
+
+            <Button
+                android:id="@+id/Aguadehorchata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Horchata 1L $25.00" />
+
+            <ImageView
+                android:id="@+id/cocacola600"
+                android:layout_width="150dp"
+                android:layout_height="93dp"
+                android:layout_gravity="left"
+                app:srcCompat="@drawable/cocacola" />
+
+            <Button
+                android:id="@+id/coca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Coca-Cola 600ml $28.00" />
+
+            <TextView
+                android:id="@+id/Comer"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="Comidas"
+                android:textSize="25dp"/>
+
+            <ImageView
+                android:id="@+id/chila"
+                android:layout_width="150dp"
+                android:layout_height="93dp"
+                android:layout_gravity="left"
+                app:srcCompat="@drawable/chilaquiles" />
+
+            <Button
+                android:id="@+id/btn_chila"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Orden de Chilaquiles $35.00" />
+
+            <ImageView
+                android:id="@+id/spagueti"
+                android:layout_width="150dp"
+                android:layout_height="93dp"
+                android:layout_gravity="left"
+                app:srcCompat="@drawable/spagueti" />
+
+            <Button
+                android:id="@+id/btn_spagueti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Orden de Spagueti $40.00" />
+
+            <ImageView
+                android:id="@+id/tacos"
+                android:layout_width="150dp"
+                android:layout_height="93dp"
+                android:layout_gravity="left"
+                app:srcCompat="@drawable/tacos" />
+
+            <Button
+                android:id="@+id/btn_tacos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Tacos de Pastor 2 x $15.00" />
+
+            <ImageView
+                android:id="@+id/tortapollo"
+                android:layout_width="150dp"
+                android:layout_height="93dp"
+                android:layout_gravity="left"
+                app:srcCompat="@drawable/tortapollo" />
+
+            <Button
+                android:id="@+id/btn_torta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Torta de pollo $35.00" />
+
+            <TextView
+                android:id="@+id/snack"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="Snacks"
+                android:textSize="25dp"/>
+
+            <ImageView
+                android:id="@+id/emperador1"
+                android:layout_width="150dp"
+                android:layout_height="93dp"
+                android:layout_gravity="left"
+                app:srcCompat="@drawable/emperador" />
+
+            <Button
+                android:id="@+id/btn_emperador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Emperador $18.00" />
+
+            <ImageView
+                android:id="@+id/donitas"
+                android:layout_width="150dp"
+                android:layout_height="93dp"
+                android:layout_gravity="left"
+                app:srcCompat="@drawable/onitas" />
+
+            <Button
+                android:id="@+id/btn_donitas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="donitas $35.00" />
+
+            <TextView
+                android:id="@+id/proximamente"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="center_horizontal"
+                android:text="Espera mas productos proximamente...."
+                android:textSize="25dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
